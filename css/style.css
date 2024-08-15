@@ -1,0 +1,218 @@
+*{
+    margin:0;
+    top: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    line-height: 1.5;
+    font-family: "Tinos", serif;
+    background-image: linear-gradient(47deg,green,rgb(46, 91, 176));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+/* weather page start */
+#head{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    margin: 10px 0;
+}
+#box{
+    width: 45%;
+    background: linear-gradient(90deg, rgba(102, 31, 160, 1) 1%, rgba(90, 96, 177, 1) 35%, rgba(12, 206, 245, 1) 100%);
+    padding: 20px;
+    margin: 0 auto;
+}
+#ip-1{
+    /* width: 300px; */
+    padding: 10px 46px 10px 16px;
+}
+#search{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#icon-search{
+    position: absolute;
+    right: 153px;
+    transform: translate(0, -50%);
+    top: 55%;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fa-cloud{
+    font-size: 100px;
+    margin: 27px 0;
+    color: #c2cbd0;
+}
+.fa-wind{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+#icon,#deg,#place{
+    text-align: center;
+}
+#humid{
+    align-items: center;
+    margin-right: 16px;
+}
+#wind,#humid{
+    display: flex;
+    width: 40%;
+    text-align: center;
+}
+#wind i{
+    display: flex;
+    align-items: center;
+}
+#Humid-wind{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+#w-icon{
+    width: 140px;
+}
+#date,#time,#humidity,#speed,#wdeg{
+    color: #c0c1cd;
+}
+/* weather page end */
+
+
+
+/* media query */
+/* Mobile devices (portrait mode) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        background-color: lightblue;
+    }
+
+    #box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #icon img {
+        width: 80px;
+    }
+    #ip-1{
+        width: 100%;
+    }
+    #icon-search{
+        right: 23px;
+    }
+    #Humid-wind{
+        display: block;
+    }
+    #humid,#wind{
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+
+/* Mobile devices (landscape mode) */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 16px;
+        background-color: lightgreen;
+    }
+
+    #box {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #icon img {
+        width: 100px;
+    }
+}
+
+/* Tablets (portrait mode) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+        background-color: lightyellow;
+    }
+
+    #box {
+        width: 70%;
+        padding: 20px;
+    }
+
+    #icon img {
+        width: 120px;
+    }
+    #ip-1{
+        width: 100%;
+    }
+    #icon-search{
+        right: 20px;
+    }
+}
+
+/* Tablets (landscape mode) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        font-size: 20px;
+        background-color: lightcoral;
+    }
+
+    #box {
+        width: 60%;
+        padding: 25px;
+    }
+
+    #icon img {
+        width: 140px;
+    }
+    #icon-search{
+        right: 215px;
+    }
+}
+
+/* Small desktops/laptops */
+@media (min-width: 1281px) and (max-width: 1440px) {
+    body {
+        font-size: 22px;
+        background-color: lightpink;
+    }
+
+    #box {
+        width: 50%;
+        padding: 30px;
+    }
+
+    #icon img {
+        width: 160px;
+    }
+    #icon-search{
+        right: 215px;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1441px) {
+    body {
+        font-size: 24px;
+        background-color: lightgrey;
+    }
+
+    #box {
+        width: 40%;
+        padding: 35px;
+    }
+
+    #icon img {
+        width: 180px;
+    }
+}
